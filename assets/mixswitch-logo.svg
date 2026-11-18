@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 256 256">
+<defs>
+ <linearGradient id="arc" x1="32" y1="58" x2="177" y2="225" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#8BEE87"/><stop offset="0.38" stop-color="#49E9B0"/><stop offset="0.67" stop-color="#10CFDE"/><stop offset="1" stop-color="#0986F7"/></linearGradient>
+ <linearGradient id="pads" x1="116" y1="27" x2="217" y2="69" gradientUnits="userSpaceOnUse"><stop stop-color="#8FF68E"/><stop offset="0.48" stop-color="#32EBC5"/><stop offset="1" stop-color="#06B4EC"/></linearGradient>
+ <linearGradient id="lower" x1="119" y1="202" x2="216" y2="240" gradientUnits="userSpaceOnUse"><stop stop-color="#14DBE5"/><stop offset="1" stop-color="#126BF3"/></linearGradient>
+ <linearGradient id="bars" x1="0" y1="94" x2="0" y2="181" gradientUnits="userSpaceOnUse"><stop stop-color="#77F58B"/><stop offset="0.50" stop-color="#22E9C0"/><stop offset="1" stop-color="#07B6FB"/></linearGradient>
+ <linearGradient id="knob" x1="0" y1="0" x2="0" y2="30" gradientUnits="userSpaceOnUse"><stop stop-color="#16C5FF"/><stop offset="1" stop-color="#1471EC"/></linearGradient>
+</defs>
+<path d="M145 34 C85 31 42 73 42 132 C42 186 85 222 145 222" fill="none" stroke="url(#arc)" stroke-width="20" stroke-linecap="round"/>
+<rect x="122" y="21" width="95" height="40" rx="20" fill="url(#pads)"/>
+<rect x="122" y="202" width="95" height="40" rx="20" fill="url(#lower)"/>
+<path d="M78 137 H99 L112 122 L125 154 L137 108 L147 135 L154 126" fill="none" stroke="#FFFFFF" stroke-linejoin="round" stroke-linecap="round" stroke-width="10"/>
+<rect x="172" y="99" width="10" height="87" rx="5" fill="url(#bars)"/>
+<rect x="198" y="99" width="10" height="87" rx="5" fill="url(#bars)"/>
+<rect x="224" y="99" width="10" height="87" rx="5" fill="url(#bars)"/>
+<rect x="164" y="148" width="26" height="19" rx="9" fill="url(#knob)"/>
+<rect x="190" y="124" width="26" height="19" rx="9" fill="url(#knob)"/>
+<rect x="216" y="139" width="26" height="19" rx="9" fill="url(#knob)"/>
+</svg>

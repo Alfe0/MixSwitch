@@ -1,0 +1,47 @@
+[package]
+name = "mixswitch"
+version = "1.0.0"
+description = "MixSwitch - Per-App Volume Mixer & Instant Playback Device Switcher (Pure Native Rust)"
+authors = ["MixSwitch"]
+license = "MIT"
+edition = "2021"
+build = "build.rs"
+
+[build-dependencies]
+embed-resource = "2.4"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+once_cell = "1.19"
+parking_lot = "0.12"
+
+[dependencies.windows]
+version = "0.52"
+features = [
+    "implement",
+    "Win32_Foundation",
+    "Win32_System_Com",
+    "Win32_System_Com_StructuredStorage",
+    "Win32_System_Variant",
+    "Win32_Security",
+    "Win32_System_Threading",
+    "Win32_System_Diagnostics_ToolHelp",
+    "Win32_System_LibraryLoader",
+    "Win32_Media_Audio",
+    "Win32_Media_Audio_Endpoints",
+    "Win32_UI_Shell",
+    "Win32_UI_Shell_PropertiesSystem",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_UI_Input_KeyboardAndMouse",
+    "Win32_UI_HiDpi",
+    "Win32_Graphics_Gdi",
+    "Win32_Graphics_Dwm",
+]
+
+[profile.release]
+panic = "abort"
+codegen-units = 1
+lto = true
+opt-level = "s"
+strip = true

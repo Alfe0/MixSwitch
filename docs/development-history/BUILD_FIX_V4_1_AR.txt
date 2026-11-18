@@ -1,0 +1,12 @@
+MixSwitch v4.1 — إصلاح خطأ التجميع E0599
+
+في src/audio.rs:
+- استبدال Process32FirstW(...).as_bool() بـ Process32FirstW(...).is_ok()
+- استبدال !Process32NextW(...).as_bool() بـ Process32NextW(...).is_err()
+
+السبب: إصدار windows = 0.52 يعيد Result<(), windows::core::Error> في هاتين الدالتين،
+ولذلك لا توجد دالة as_bool() على القيمة المعادة.
+
+ما عدا هذين التعديلين النصيين، جميع ملفات المشروع الأصلية لم تتغير.
+يمكن البناء باستخدام BUILD_EXE.bat على Windows.
+لم يُختبر البناء في بيئة Windows في هذه الجلسة.
