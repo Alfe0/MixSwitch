@@ -17,6 +17,22 @@ MixSwitch runs from the system tray and lets you control the Windows master volu
 - Configure hotkeys and device icons in the app settings.
 - Windows 11–style dark appearance; embedded icon and UI assets.
 
+## Screenshots
+
+### Volume Mixer
+
+<p align="center">
+  <img src="screenshots/pic3.png" width="310" alt="MixSwitch Speaker Mixer">
+  <img src="screenshots/pic2.png" width="310" alt="MixSwitch Headphones Mixer">
+</p>
+
+### Settings & About
+
+<p align="center">
+  <img src="screenshots/pic1.png" width="310" alt="MixSwitch Settings">
+  <img src="screenshots/pic4.png" width="310" alt="MixSwitch About">
+</p>
+
 ## Install (Windows x64)
 
 1. Open **Releases** on this repository and download **MixSwitch.exe** from the latest published release.
